@@ -46,6 +46,7 @@
 				color: #000;
 				padding: 0;
 				text-transform: uppercase;
+				font-weight: bold;
 			}
 		</style>
 	</head>
@@ -106,10 +107,10 @@
 						var j = i;
 						setTimeout(function() { 
 							$(`.list li:nth-child(${i + 1})`).decrypt_effect({
-								speed: 500,
+								speed: 300,
 								decrypted_text: words[i]
 							});
-						 }, (j + 1) * 500);
+						 }, (j + 1) * 300);
 				})(i);
 			}
 		});
