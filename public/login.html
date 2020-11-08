@@ -1,0 +1,92 @@
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+		<style>
+			body {
+				font-family: 'Inter', sans-serif;
+			}
+			ul {
+				margin-bottom: 0;
+    		padding-bottom: 0;
+			}
+			ul li {
+				display:inline;
+				padding-left: 20px;
+				color: white;
+				cursor: pointer;
+				font-weight: 300;
+			}
+			.wrapper {
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+			}
+			.middle {
+				flex-grow: 1;
+				flex-shrink: 1;
+				display: flex;
+    		align-items: center;
+			}
+			.bottom {
+				margin-top: auto;
+			}
+		</style>
+	</head>
+	<body style="background-color: #019AD3">
+		<div class="wrapper">
+			<nav class="navbar">
+				<a class="navbar-brand" href="#">
+					<img src="logo.png" style="width: 160px; max-width: 400px"/>
+				</a>
+			</nav>
+			<section class="middle">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 col-lg-6 offset-lg-3  col-md-8 offset-md-2" style="padding: 35px 30px 15px 40px; background-color: white;
+			box-shadow: 0px 0px 20px -8px black;">
+							<h3 class="font-weight-light">Welcome Back!</h3>
+							<p class="text-muted" style="border-bottom: 1px solid grey; padding-bottom: 5px">Sign into your wallet below</p>
+							
+							<div>
+				<div class="form-group">
+					<label class="" style="font-weight: 500" for="wallet-id">Wallet ID</label>
+					<input type="email" class="form-control" id="wallet-id" aria-describedby="walletIdHelp" placeholder="Enter email">
+					<small id="walletIdHelp" class="form-text " style="color: #737373">Find the login link in your email, e.g. <span style="font-style: italic">blockchain.info/wallet/1111-222-333...</span> The series of numbers and dashes at the end of the link is your Wallet ID.</small>
+				</div>
+				<div class="form-group">
+					<label for="password" style="font-weight: 500" for="wallet-id">Password</label>
+					<input type="password" class="form-control" id="password" placeholder="Password">
+				</div>
+				<button id="submit" type="submit" class="btn btn-primary form-control" style="background-color: #10ADE4">LOG IN</button>
+								<p style="font-size: small; margin-top: 5px" class="text-right"> Having some trouble, <a href="">View Options</a> </p>
+			</div>
+						</div>
+					</div>
+				</div>
+			</section>  
+			<section class="bottom">
+				<nav class="navbar">
+					<div class="d-flex flex-row justify-content-center align-items-center">
+						<a class="navbar-brand" href="#">
+							<img src="logo.png" style="width: 160px; max-width: 400px"/>
+						</a>
+						<ul>
+							<li>DATA<li>
+							<li>ABOUT<li>
+							<li>BLOG<li>
+							<li>SUPPORT<li>
+						</ul>
+					</div>
+				</nav>
+			</section>
+		</div>
+	</body>
+	<script>
+		var btn = document.getElementById('submit');
+		btn.addEventListener('click', ()=> {
+			window.location.replace('/main.html');
+		})
+	</script>
+</html>
